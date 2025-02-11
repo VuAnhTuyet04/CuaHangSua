@@ -1,0 +1,50 @@
+.cart-page {
+    margin-top: 3em;
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.total-price {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+#total-price-container {
+    margin-top: 20px;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;  /* Giới hạn chiều rộng nút thanh toán */
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.checkout-button:hover {
+    background-color: #2980b9;
+}

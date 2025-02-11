@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cơm trưa vui vẻ - Trang chủ</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .flower {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            margin-top: 10em;
+            position: absolute;
+            margin-left: 10em;
+        }
+
+        .wrapper {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            animation: rotateFlower 15s linear infinite;
+            /* Added animation to rotate the flower */
+        }
+
+        @keyframes rotateFlower {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .miolo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .petal {
+            width: 30px;
+            height: 80px;
+            background-color: rgb(224, 124, 179);
+            border-radius: 45%;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform-origin: 51% 125%;
+            box-shadow: 8px 20px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .petal1 {
+            transform: translate(-50%, -100%) rotate(0deg);
+        }
+
+        .petal2 {
+            transform: translate(-50%, -100%) rotate(36deg);
+        }
+
+        .petal3 {
+            transform: translate(-50%, -100%) rotate(72deg);
+        }
+
+        .petal4 {
+            transform: translate(-50%, -100%) rotate(108deg);
+        }
+
+        .petal5 {
+            transform: translate(-50%, -100%) rotate(144deg);
+        }
+
+        .petal6 {
+            transform: translate(-50%, -100%) rotate(180deg);
+        }
+
+        .petal7 {
+            transform: translate(-50%, -100%) rotate(216deg);
+        }
+
+        .petal8 {
+            transform: translate(-50%, -100%) rotate(252deg);
+        }
+
+        .petal9 {
+            transform: translate(-50%, -100%) rotate(288deg);
+        }
+
+        .petal10 {
+            transform: translate(-50%, -100%) rotate(324deg);
+            box-shadow: 4px -11px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="main-container">
+        <div class="flower">
+            <div class="wrapper">
+                <div class="petal petal1"></div>
+                <div class="petal petal2"></div>
+                <div class="petal petal3"></div>
+                <div class="petal petal4"></div>
+                <div class="petal petal5"></div>
+                <div class="petal petal6"></div>
+                <div class="petal petal7"></div>
+                <div class="petal petal8"></div>
+                <div class="petal petal9"></div>
+                <div class="petal petal10"></div>
+                <div class="miolo"></div>
+            </div>
+        </div>
+        <div class="flower" style="margin-top: 50em; margin-left:20em">
+            <div class="wrapper">
+                <div class="petal petal1"></div>
+                <div class="petal petal2"></div>
+                <div class="petal petal3"></div>
+                <div class="petal petal4"></div>
+                <div class="petal petal5"></div>
+                <div class="petal petal6"></div>
+                <div class="petal petal7"></div>
+                <div class="petal petal8"></div>
+                <div class="petal petal9"></div>
+                <div class="petal petal10"></div>
+                <div class="miolo"></div>
+            </div>
+        </div>
+        <!-- Slider Bên Trái -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="../images/baner111.png" alt="Banner 1"></div>
+                <div class="slide"><img src="../images/baner222.png" alt="Banner 2"></div>
+                <div class="slide"><img src="../images/baner333.png" alt="Banner 3"></div>
+            </div>
+            <button class="prev navigation-button" onclick="prevSlide()">&#10094;</button>
+            <button class="next navigation-button" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <!-- Danh Sách Sản Phẩm Bên Phải -->
+        <div class="product-list">
+            <h1>Sản phẩm nổi bật</h1>
+            <div class="product">
+                <div class="product-item">
+                    <img src="../images/sp1.png" alt="Sản phẩm 1">
+                    <h2> Vinamilk vị nguyên bản</h2>
+                    <p>Giá: 20.000đ</p>
+                    <p>Đánh giá:9/10</p>
+                    <button class="btn btn-primary">Mô tả chi tiết:</button>
+                    <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="../images/sp2.png" alt="Sản phẩm 2">
+                    <h2>Vinamilk vị dâu tây(strawberry)</h2>
+                    <p>Giá: 25.000đ</p>
+                    <p>Đánh giá:9/10</p>
+                    <button class="btn btn-primary">Mô tả chi tiết:</button>
+                    <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="../images/sp3.png" alt="Sản phẩm 3">
+                    <h2>Vinamilk vị socola</h2>
+                    <p>Giá: 25.000đ</p>
+                    <p>Đánh giá:10/10</p>
+                    <button class="btn btn-primary">Mô tả chi tiết:</button>
+                    <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="../images/sp4.png" alt="Sản phẩm 3">
+                    <h2>Vinamilk vị vanilla</h2>
+                    <p>Đánh giá:9.5/10</p>
+                    <p>Giá: 25.000đ</p>
+                    <button class="btn btn-primary">Mô tả chi tiết:</button>
+                    <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Sản phẩm mới</h1>
+        <div class="new-product">
+            <div class="product-item">
+                <img src="../images/sp5.png" alt="Sản phẩm 5">
+                <h2>Vinamilk vị matcha</h2>
+                <p>Giá: 27.000đ</p>
+                <p>Đánh giá: 8.5/10</p>
+                <button class="btn btn-primary">Mô tả chi tiết</button>
+                <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="product-item">
+                <img src="../images/sp6.png" alt="Sản phẩm 6">
+                <h2>Vinamilk vị táo</h2>
+                <p>Giá: 28.000đ</p>
+                <p>Đánh giá: 9/10</p>
+                <button class="btn btn-primary">Mô tả chi tiết</button>
+                <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="../images/sp7.png" alt="Sản phẩm 6">
+                <h2>Vinamilk vị cam</h2>
+                <p>Giá: 28.000đ</p>
+                <p>Đánh giá: 9/10</p>
+                <button class="btn btn-primary">Mô tả chi tiết</button>
+                <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product-item">
+                <img src="../images/sp8.png" alt="Sản phẩm 6">
+                <h2>Vinamilk vị nho</h2>
+                <p>Giá: 28.000đ</p>
+                <p>Đánh giá: 9/10</p>
+                <button class="btn btn-primary">Mô tả chi tiết</button>
+                <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
